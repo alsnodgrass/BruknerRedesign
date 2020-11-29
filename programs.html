@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang = "en-us">
+    <head>
+        <!--
+            File:   programs.html
+            Name:   Austin Snodgrass
+            Date:   23 November 2020
+            Desc:   
+        -->
+        <title>Programs</title>
+
+        <!-- Including our meta tags and links to our stylesheets as well as CDNs to the Bootstrap framework -->
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "styles/style.css" type = "text/css" />
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity = "sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin = "anonymous">
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity = "sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin = "anonymous"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity = "sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin = "anonymous"></script>
+        <script src = "scripts/script.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id = "navbarNav">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "index.html">Home</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "visit.html">Visit</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "wildlifeRehab.html">Wildlife Rehab</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "events.html">Events</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "programs.html">Programs</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "education.html">Educator Resources</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "support.html">Support Us</a>
+                    </li>
+                </ul>
+            </div>
+            <a class = "d-flex navbar-brand justify-content-end" href = "index.html">Brukner Nature Center</a>
+        </nav>
+
+        <div class = "jumbotron jumbotron-fluid bg-transparent">
+            <div class = "container">
+                <div class = "d-flex justify-content-around flex-column flex-md-row flex-lg-row">
+                    <picture class = "d-flex justify-content-center">
+                        <source media = "(min-width:768px)" srcset = "images/logoLarge.png">
+                        <source media = "(min-width:500px)" srcset = "images/logoSmall.png">
+                        <img src = "images/logoSmall.png" alt = "Brukner Nature Center" style = "display: flex;width: auto;">
+                    </picture>
+                    <h1 class = "p-3 m-1 display-4 text-info" style = "text-align: center;margin: auto;">Brukner Nature Center</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id = "programInfo" class = "infoStyle flex-column flex-lg-row align-items-lg-start p-3">
+            <div class = "m-1 visit-item infoStyle text-light bg-info">
+                <h3>Programs</h3>
+                <div class = "d-flex d-flex flex-column flex-lg-row btn-group mr-2" role = "group">
+                    <button type = "button" class = "btn btn-secondary" onclick = "showPEEP()">PEEP</button>
+                    <button type = "button" class = "btn btn-secondary" onclick = "showSummer()">Summer Camp for Kids</button>
+                    <button type = "button" class = "btn btn-secondary" onclick = "showWinter()">Winter Vacation Camps</button>
+                    <button type = "button" class = "btn btn-secondary" onclick = "showBirders()">Young Birders Club</button>
+                </div>
+
+                <div id = "peep" style = "display: block;">
+                    <h6 class = "pt-2">Preschool Environmental Education Program</h6>
+                    <p>Please check back with us next fall for details on the photo contest.</p>
+                    <p>Give the child in your life the gift to play, learn and grow with nature! Let them experience the outdoors using their imagination, free to climb trees and crawl over logs!</p>
+                    <p>We are planning our PEEP Winter Session 1 as an in-person class with a few changes! Class sizes will be limited to 10 children and the classes will be 1.5 hours of mostly outdoor activity (always dress for the weather - winter coat, 
+                        boots, gloves, etc).  Please note that PEEP is geared specifically for children ages 3 – 5 years old, who are potty-trained and not currently in Kindergarten or being homeschooled.  We will be following the state guidelines for 
+                        covid-19.</p>
+                    <p><b>Sessions offered:</b> Monday, Tuesday, Wednesday, Thursday, and Friday mornings from 9:30 – 11:00am, or Thursday afternoons from 1:00 – 2:30pm.</p>
+                    <p style = "font-weight: bold;">Winter 1 session will run from Jan. 4 - Feb.12.</p>
+                    
+                    <div style = "text-align: center;">
+                        <h6>Cost for PEEP Winter 1 Session:</h6>
+                        <p>$55 for BNC Members per child
+                        <br />$75 for Non-Members per child
+                        <br />(CASH OR CHECK ONLY)</p>
+                    </div>
+
+                    <p>To pre-register, please call (937) 698-6493 Monday - Friday, or email <a href = "info@bruknernaturecenter.com" class = "text-light">info@bruknernaturecenter.com</a></p>
+
+                    <div class = "d-flex flex-column flex-md-row flex-lg-row justify-content-center" style = "text-align: center;">
+                        <picture class = "m-2">
+                            <source media = "(min-width:768px)" srcset = "images/peepOneLarge.jpg">
+                            <source media = "(min-width:500px)" srcset = "images/peepOneSmall.jpg">
+                            <img src = "images/peepOneSmall.jpg" alt = "Preschool Environmental Education Program" style = "width: 70%;">
+                        </picture>
+    
+                        <picture class = "m-2">
+                            <source media = "(min-width:768px)" srcset = "images/peepTwoLarge.jpg">
+                            <source media = "(min-width:500px)" srcset = "images/peepTwoSmall.jpg">
+                            <img src = "images/peepTwoSmall.jpg" alt = "Preschool Environmental Education Program" style = "width: 70%;">
+                        </picture>
+                    </div>
+                    <div class = "d-flex flex-column flex-md-row flex-lg-row justify-content-center" style = "text-align: center;">
+                        <picture class = "m-2">
+                            <source media = "(min-width:768px)" srcset = "images/peepThreeLarge.jpg">
+                            <source media = "(min-width:500px)" srcset = "images/peepThreeSmall.jpg">
+                            <img src = "images/peepThreeSmall.jpg" alt = "Preschool Environmental Education Program" style = "width: 70%;">
+                        </picture>
+    
+                        <picture class = "m-2">
+                            <source media = "(min-width:768px)" srcset = "images/peepFourLarge.jpg">
+                            <source media = "(min-width:500px)" srcset = "images/peepFourSmall.jpg">
+                            <img src = "images/peepFourSmall.jpg" alt = "Preschool Environmental Education Program" style = "width: 70%;">
+                        </picture>
+                    </div>
+                </div>
+
+                <div id = "summerCamp" style = "display: none;">
+                    <p class = "pt-2">Sign up your 'junior naturalist', who are going into grades K – 5th, for a week of outdoor adventures, wild games and wildlife encounters sure to inspire & awe!</p>
+                    <p>Please check back with us next fall for details on the photo contest.</p>
+                    <p>Give the child in your life the gift to play, learn and grow with nature! Let them experience the outdoors using their imagination, free to climb trees and crawl over logs!</p>
+                    <p>We are planning our PEEP Winter Session 1 as an in-person class with a few changes! Class sizes will be limited to 10 children and the classes will be 1.5 hours of mostly outdoor activity (always dress for the weather - winter coat, 
+                        boots, gloves, etc).  Please note that PEEP is geared specifically for children ages 3 – 5 years old, who are potty-trained and not currently in Kindergarten or being homeschooled.  We will be following the state guidelines for 
+                        covid-19.</p>
+                    <p><b>Sessions offered:</b> Monday, Tuesday, Wednesday, Thursday, and Friday mornings from 9:30 – 11:00am, or Thursday afternoons from 1:00 – 2:30pm.</p>
+                    <p style = "font-weight: bold;">Winter 1 session will run from Jan. 4 - Feb.12.</p>
+                    
+                    <div class = "d-flex flex-column flex-md-row flex-lg-row justify-content-center" style = "text-align: center;">
+                        <div>
+                            <h6>Three camp experiences are offered in June and July:</h6>
+                            <p>June 15 - 19 : "Strive to Survive"
+                            <br />June 29 - July 3 : "Strive to Survive"
+                            <br />July 13 - 17 : "Wild Like Me"</p>
+                        </div>
+                        <div>
+                            <h6>Explore half day: 9:00 am - 12:00 pm</h6>
+                            <p>$75 for BNC Members
+                            <br />$100 for Non-Members
+                            <br />Cash or check only. Prices are for entire week of camp!</p>
+                        </div>
+                    </div>
+
+                    <p style = "font-weight: bold;">Deadline for all camps is the Wednesday before camp</p>
+                    <p>To pre-register, please call (937) 698-6493 Monday - Friday, or email <a href = "wildlife@bruknernaturecenter.com" class = "text-light">info@bruknernaturecenter.com</a></p>
+                    <p>Check out our summer evening program "Where the Wild Things Are" for kids entering grades K-5th on Friday, July 24 and our "Stillwater Adventure" in July! Details are in our Summer Program Brochure!</p>
+                    <div style = "text-align: center;">
+                        <button type = "button" class = "btn btn-dark btn-sm m-1">Summer Program Brochure</button>
+                    </div>
+
+                    <div class = "d-flex flex-column flex-md-row flex-lg-row justify-content-center" style = "text-align: center;">
+                        <picture class = "m-2">
+                            <source media = "(min-width:768px)" srcset = "images/summerCampOneLarge.jpg">
+                            <source media = "(min-width:500px)" srcset = "images/summerCampOneSmall.jpg">
+                            <img src = "images/summerCampOneSmall.jpg" alt = "Summer Camp for Kids" style = "width: 70%;">
+                        </picture>
+    
+                        <picture class = "m-2">
+                            <source media = "(min-width:768px)" srcset = "images/summerCampTwoLarge.jpg">
+                            <source media = "(min-width:500px)" srcset = "images/summerCampTwoSmall.jpg">
+                            <img src = "images/summerCampTwoSmall.jpg" alt = "Summer Camp for Kids" style = "width: 70%;">
+                        </picture>
+                    </div>
+                    <div class = "d-flex flex-column flex-md-row flex-lg-row justify-content-center" style = "text-align: center;">
+                        <picture class = "m-2">
+                            <source media = "(min-width:768px)" srcset = "images/summerCampThreeLarge.jpg">
+                            <source media = "(min-width:500px)" srcset = "images/summerCampThreeSmall.jpg">
+                            <img src = "images/summerCampThreeSmall.jpg" alt = "Summer Camp for Kids" style = "width: 70%;">
+                        </picture>
+    
+                        <picture class = "m-2">
+                            <source media = "(min-width:768px)" srcset = "images/summerCampFourLarge.jpg">
+                            <source media = "(min-width:500px)" srcset = "images/summerCampFourSmall.jpg">
+                            <img src = "images/summerCampFourSmall.jpg" alt = "Summer Camp for Kids" style = "width: 70%;">
+                        </picture>
+                    </div>
+                </div>
+
+                <div id = "winterCamp" style = "display: none;">
+                    <p class = "pt-2">Monday, December 21 & Tuesday, December 22</p>
+                    <p>When the air turns frigid and the frost settles on the windows, children fill with anticipation of winter vacation. Sign your child up for a morning of exploration and fill their new found free time with fun and learning. During 
+                        this winter vacation we will investigate the truth behind some popular wildlife myths! Do all birds migrate for winter? Do squirrels really hibernate? Come meet our wildlife ambassadors and learn what's fact and what's fiction!</p>
+                    
+                    <div class = "d-flex flex-column flex-md-row flex-lg-row justify-content-center" style = "text-align: center;">
+                        <div class = "m-3">
+                            <h6>Register for one or both days:</h6>
+                            <p>Monday's topic is mammals
+                            <br />Tuesday's topic is birds</p>
+                        </div>
+                        <div class = "m-3">
+                            <h6>Price Per Day</h6>
+                            <p>$15 for BNC Members
+                            <br />$20 for Non-Members</p>
+                        </div>
+                    </div>
+
+                    <p>Cash or check only. May register for one or two days.</p>
+                    <p style = "font-weight: bold;">Deadline for all camps is the Wednesday before camp</p>
+                    <div style = "text-align: center;">
+                        <button type = "button" class = "btn btn-dark btn-sm m-1">Medical Consent Form</button>
+                    </div>
+
+                    <picture class = "d-flex justify-content-center pt-3" style = "display: flex;width: auto;">
+                        <source media = "(min-width:768px)" srcset = "images/winterCampLarge.jpg">
+                        <source media = "(min-width:500px)" srcset = "images/winterCampSmall.jpg">
+                        <img src = "images/winterCampSmall.jpg" alt = "Winter Camp for Kids">
+                    </picture>
+                </div>
+
+                <div id = "birders" style = "display: none;">
+                    <p class = "pt-2">Come be a part of one of the most exciting and rewarding clubs, geared specifically for young birders in grades 6 through 12!   As a member of Brukner Nature Center’s Young Birders Club you’ll enjoy the opportunity to:</p>
+                    
+                    <ul>
+                        <li>Discover and study the amazing birds found at Brukner Nature Center through hands-on monthly meetings and hikes!</li>
+                        <li>Get experience using BNC’s high quality binoculars and field guides during our meetings, hikes and special events, so no extra equipment is needed!</li>
+                        <li>Join in field trips and other special events with BNC staff and the BNC Bird Club adults!</li>
+                        <li>Network with other young naturalists and professional ornithologists during opportunities for young birders around the state!</li>
+                        <li>Apply for scholarships to attend summer camps, workshops, classes, training programs, conventions and other bird-related activities!</li>
+                    </ul>
+
+                    <p style = "font-weight: bold;">Membership is only $10.00 per year and due at the 3rd meeting you attend.</p>
+                    <p>For more information email <a href = "brian@bruknernaturecenter.com" class = "text-light">brian@bruknernaturecenter.com</a></p>
+
+                    <div style = "text-align: center;">
+                        <button type = "button" class = "btn btn-dark btn-sm m-1">YBC Member Form</button>
+                    </div>
+
+                    <picture class = "d-flex justify-content-center pt-3" style = "display: flex;width: auto;">
+                        <source media = "(min-width:768px)" srcset = "images/birdersClubLarge.jpg">
+                        <source media = "(min-width:500px)" srcset = "images/birdersClubSmall.jpg">
+                        <img src = "images/birdersClubSmall.jpg" alt = "Birders Club">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

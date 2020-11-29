@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang = "en-us">
+    <head>
+        <!--
+            File:   visit.html
+            Name:   Austin Snodgrass
+            Date:   25 November 2020
+            Desc:   
+        -->
+        <title>Visit</title>
+
+        <!-- Including our meta tags and links to our stylesheets as well as CDNs to the Bootstrap framework -->
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "styles/style.css" type = "text/css" />
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity = "sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin = "anonymous">
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity = "sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin = "anonymous"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity = "sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin = "anonymous"></script>
+        <script src = "scripts/script.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id = "navbarNav">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "index.html">Home</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "visit.html">Visit</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "wildlifeRehab.html">Wildlife Rehab</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "events.html">Events</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "programs.html">Programs</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "education.html">Educator Resources</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-white" href = "support.html">Support Us</a>
+                    </li>
+                </ul>
+            </div>
+            <a class = "d-flex navbar-brand justify-content-end" href = "index.html">Brukner Nature Center</a>
+        </nav>
+
+        <div class = "jumbotron jumbotron-fluid bg-transparent">
+            <div class = "container">
+                <div class = "d-flex justify-content-around flex-column flex-md-row flex-lg-row">
+                    <picture class = "d-flex justify-content-center">
+                        <source media = "(min-width:768px)" srcset = "images/logoLarge.png">
+                        <source media = "(min-width:500px)" srcset = "images/logoSmall.png">
+                        <img src = "images/logoSmall.png" alt = "Brukner Nature Center" style = "display: flex;width: auto;">
+                    </picture>
+                    <h1 class = "p-3 m-1 display-4 text-info" style = "text-align: center;margin: auto;">Brukner Nature Center</h1>
+                    <section class = "hours-item infoStyle text-light">
+                        <h4>Hours</h4>
+                        <h6>Monday - Friday</h6>
+                        <p>Closed</p>
+                        <h6>Saturday & Sunday</h6>
+                        <p>Closed</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div id = "visitInfo" class = "infoStyle flex-column flex-lg-row align-items-lg-start p-3">
+            <section class = "m-1 admission-item infoStyle text-light bg-info">
+                <h4>Admission</h4>
+                <h6>Includes trails and & Interpretive Building</h6>
+                <p>$2.50 per person</p>
+                <p style = "font-weight: bold;">or</p>
+                <p>$10 per family</p>
+                <br />
+                <p>(Family: Parents & children under the age of 18 or grandparents & grandchildren under the age of 18)</p>
+            </section>
+
+            <div class = "m-1 visit-item infoStyle text-light bg-info">
+                <div class = "d-flex d-flex flex-column flex-md-row flex-lg-row btn-group mr-2" role = "group">
+                    <button type = "button" class = "btn btn-secondary" onclick = "showHiking()">Hike A Trail</button>
+                    <button type = "button" class = "btn btn-secondary" onclick = "showBirdwatching()">Go Birdwatching</button>
+                    <button type = "button" class = "btn btn-secondary" onclick = "showInterpretive()">Interpretive Building</button>
+                    <button type = "button" class = "btn btn-secondary" onclick = "showIddings()">Iddings Log House</button>
+                </div>
+
+                <div id = "hiking" style = "display: block;">
+                    <p>Brukner Nature Center has 6 miles of nature trails that allow you to search for wildlife on quiet mulch trails through wooldland, wetland, and prairie.</p>
+                    <ul>
+                        <li>Trails are open from sunrise to sunset only!</li>
+                        <li>No pets allowed - they scare our wildlife!</li>
+                        <li>No smoking or vaping on BNC property!</li>
+                        <li>Please stay on the trails, especially through the muddy parts!  Off-trail exploration causes erosion, damages wildflowers, & depletes habitat by widening trails.</li>
+                        <li>Please take all trash home with you!</li>
+                    </ul>
+
+                    <picture class = "d-flex justify-content-center" style = "display: flex;width: auto;">
+                        <source media = "(min-width:768px)" srcset = "images/hikeLarge.jpg">
+                        <source media = "(min-width:500px)" srcset = "images/hikeSmall.jpg">
+                        <img src = "images/hikeSmall.jpg" alt = "Hike A Trail">
+                    </picture>
+                </div>
+                
+                <div id = "birdwatching" style = "display: none;">
+                    <p>Brukner Nature Center is a premier birding spot for spring migration, winter feeder watching (Project Feeder Watch) and enjoying birds at any time of the year! The Tree-Top 
+                        Bird Vista is an air-conditioned oasis during the summer months and a warm and inviting place to spend the winter hours! The pileated woodpecker visits our feeders on a 
+                        regular basis year round!</p>
+                    <p>Check out our calendar of events for upcoming birding programs! Meet members of the Brukner Bird club on the 3rd Sunday of every month from 2:00 - 4:00pm in our Tree-Top Bird Vista.</p>
+
+                    <picture class = "d-flex justify-content-center">
+                        <source media = "(min-width:768px)" srcset = "images/treeTopVistaLarge.jpg">
+                        <source media = "(min-width:500px)" srcset = "images/treeTopVistaSmall.jpg">
+                        <img src = "images/treeTopVistaSmall.jpg" alt = "Tree Top Vista" style = "display: flex;width: auto;">
+                    </picture>
+                </div>
+
+                <div id = "interpretive" style = "display: none;">
+                    <h6>Art Exhibits & Kid's Nature Art Exhibit</h6>
+                    <p>Each season brings a new wildlife art exhibit to Brukner Nature Center's Heidelberg Auditorium and Meeting Room! Come enjoy our current art exhibit and mark your calendars for the 
+                        opening of our new exhibit!</p>
+
+                    <h6>Nature Library</h6>
+                    <p>All visitors can enjoy the field guides, nature writings, DVDs and more! A special section of the Nature Library is devoted to kids' nature picture books, so stop by and gather your 
+                        family for your own nature story time!</p>
+                    
+                    <h6>Nature Gift Shop</h6>
+                    <p>Check out our unique items in our nature shop at your next visit! We have field guides, children books, t-shirts, waterbottles, turtle necklaces, owl pellets, bird calls, a variety 
+                        of bird houses, our own "Brukner Blend" coffee, and so much more!</p>
+
+                    <picture class = "d-flex justify-content-center">
+                        <source media = "(min-width:768px)" srcset = "images/bncBuildingLarge.jpg">
+                        <source media = "(min-width:500px)" srcset = "images/bncBuildingSmall.jpg">
+                        <img src = "images/bncBuildingSmall.jpg" alt = "Brukner Nature Center Building" style = "display: flex;width: auto;">
+                    </picture>
+                </div>
+
+                <div id = "iddings" style = "display: none;">
+                    <p>A History of the 1804 Iddings Log House</p>
+                    <h4>Iddings Log House</h4>
+
+                    <p>An integral part of Brukner Nature Center’s interpretive programming, the 1804 Iddings Log House also holds an important place in the history of Miami County.  The Iddings family is 
+                        originally descended from the Norsemen and came to America from Radnorshire, Wales in 1683.  Richard Iddings and his wife, Sarah Thomas, arrived in Philadelphia, Pennsylvania and 
+                        settled in Nantmeal Township, Pennsylvania, between the forks of the Brandywine River and French Creek, very near a little place called Valley Forge.  Richard and Sarah Iddings were 
+                        the grandparents of two famous figures in Ohio history, General “Mad” Anthony Wayne and Benjamin Iddings.</p>
+
+                    <p>Benjamin Iddings married Phebe Wilkinson in 1775, in Pennsylvania.  Their children, listed in the Quaker Monthly Meeting records were Rachel, Ruth, Talbot, Joseph, Mary, Benjamin Jr., 
+                        Phoebe, William, Millie and Hannah.  The Iddings were a prominent and very active family in the Quaker community.  They began their life on the road in 1779, moving frequently to escape 
+                        the fighting in the area.  They settled in Greene County, Tennessee in 1795.  Here they helped found the New Hope Monthly Meeting, were Benjamin was appointed recorder in 1796 and was 
+                        an Elder.</p>
+
+                    <p>Following the Treaty of Greeneville in 1795, the Ohio territory was opened for settlement.  Benjamin, perhaps because of his famous cousin’s experience in the area, made an exploratory 
+                        trip up the Stillwater River into what is now Newton Township.  He moved his family to Miami County, acquiring a patent on 160 acres on SE 1/4 Sec. 33-7-5E.  Here, in 1804, Benjamin 
+                        constructed the log house on what is now Brukner Nature Center property.  Benjamin and Phoebe lived here with six of their ten children, as Rachel had passed away and Ruth, Talbot & 
+                        Joseph were married and on their own.</p>
+
+                    <p>Interestingly, Benjamin built his house on the property of his neighbor, Benjamin Pearson and later paid him the sum of $63.11 ½ for an additional four acres upon which his house was built.  
+                        Although this sounds strange for modern times, it was not unusual for property lines to be mistaken in the wilderness of 1800 Ohio.  Phoebe died in 1818 and in 1822, Benjamin married his 
+                        widowed neighbor, Ruth Pierce.  Benjamin died in 1826, and both he and Ruth are buried in Old Union Cemetery, on Horseshoe Bend Road.</p>
+
+                    <p>Through extensive research, the underlying historical value of the structure itself was realized, not only for its handsome construction but for the significant family history.  In 1976, 
+                        the 1804 Iddings Log House was placed on the National Register of Historic Places and a successful restoration was completed in 1981.  Through its doors have passed many visitors stepping 
+                        back in time, from Iddings relatives looking for a link to the past to children too numerous to count making memories to last a lifetime.</p>
+
+                    <picture class = "d-flex justify-content-center">
+                        <source media = "(min-width:768px)" srcset = "images/iddingsLarge.jpg">
+                        <source media = "(min-width:500px)" srcset = "images/iddingsSmall.jpg">
+                        <img src = "images/iddingsSmall.jpg" alt = "Iddings Log House" style = "display: flex;width: auto;">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
+
+<!--
+Page Notes:
+
+- Add trail map modal to hike a trail
+-->

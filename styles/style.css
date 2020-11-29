@@ -1,0 +1,78 @@
+/* 
+File:   style.css
+Name:   Austin Snodgrass
+Date:   25 November 2020
+Desc:   
+*/
+
+body {
+    background-image: url(../images/background.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3 {
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 7px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.divStyle {
+    border-radius: 10px;
+    background: #8D6F34;
+    margin: auto;
+    width: 80%;
+}
+.infoStyle {
+    border-radius: 10px;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    padding: 10px;
+}
+
+#visitInfo, #rehabInfo, #eventInfo, 
+#programInfo, #supportInfo, #educationInfo {
+    display: flex;
+    align-items: center;
+}
+
+.hours-item {
+    flex: 30%;
+    text-align: center;
+}
+
+.admission-item {
+    flex: 20%;
+    text-align: center;
+}
+.visit-item {
+    flex: 80%;
+}
+
+.woods-item-left {
+    flex: 40%;
+}
+.woods-item-right {
+    flex: 60%;
+}
+
+#hiking, #birdwatching, #interpretive, #iddings {
+    padding: 25px 25px 25px 10px;
+    margin: auto;
+}
+
+@media (max-width: 900px) {
+    .infoStyle, .divStyle {
+        width: 90%;
+    }
+}

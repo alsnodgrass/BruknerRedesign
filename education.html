@@ -3,14 +3,16 @@
 <html lang = "en-us">
     <head>
         <!--
-            File:   index.html
+            File:   education.html
             Name:   Austin Snodgrass
-            Date:   23 November 2020
-            Desc:   
+            Date:   09 December 2020
+            Desc:   File creates the Education page which includes information about all of the educational resources provided at Brukner.
+                Sections are built utilizing flexbox so that as the viewport shrinks the page responds by placing the sections in a column
+                instead of a row
         -->
         <title>History</title>
 
-        <!-- Including our meta tags and links to our stylesheets as well as CDNs to the Bootstrap framework -->
+        <!-- Including our meta tags and links to our stylesheets and scripts -->
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <link rel = "stylesheet" href = "styles/style.css" type = "text/css" />
@@ -20,6 +22,7 @@
     </head>
 
     <body>
+        <!-- Creating our responsive navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,6 +55,7 @@
             <a class = "d-flex navbar-brand justify-content-end" href = "index.html">Brukner Nature Center</a>
         </nav>
 
+        <!-- Creating our header to display the brand and logo -->
         <div class = "jumbotron jumbotron-fluid bg-transparent">
             <div class = "container">
                 <div class = "d-flex justify-content-around flex-column flex-md-row flex-lg-row">
@@ -65,6 +69,7 @@
             </div>
         </div>
 
+        <!-- Creating a section to host the quote from June Dreiling -->
         <div class = "infoStyle flex-column text-light bg-info">
             <h3>Educator Resources</h3>
 
@@ -80,6 +85,7 @@
             <br /><a href = "education@bruknernaturecenter.com" class = "text-light">education@bruknernaturecenter.com</a></p>
         </div>
 
+        <!-- Creating two sections to hold the Scout Program and Field Trip information with links to their forms -->
         <div id = "educationInfo" class = "infoStyle flex-column align-items-lg-stretch flex-lg-row">
             <section class = "m-1 infoStyle text-light bg-info">
                 <h4>Scout Programs</h4>
@@ -92,21 +98,21 @@
                 <p>Click on the appropriate scout group to download a registration form for our upcoming overnight adventures.</p>
 
                 <div style = "text-align: center;">
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Scout Program Brochure</button>
+                    <a href = "forms/scoutProgram.pdf" class = "btn btn-dark btn-sm m-1">Scout Program Brochure</a>
                 </div>
 
                 <div class = "d-flex flex-column pt-2" style = "text-align: center;">
                     <div class = "pt-1">
                         <h5>Girl Scout</h5>
                         <div style = "text-align: center;">
-                            <button type = "button" class = "btn btn-dark btn-sm m-1">Brownie's Nocturnal Adventure</button>
-                            <button type = "button" class = "btn btn-dark btn-sm m-1">Junior's Overnight</button>
+                            <a href = "forms/nocturnalAdventureBrownies.pdf" class = "btn btn-dark btn-sm m-1">Brownie's Nocturnal Adventure</a>
+                            <a href = "forms/juniorsOvernight.pdf" class = "btn btn-dark btn-sm m-1">Junior's Overnight</a>
                         </div>
                     </div>
                     <div class = "pt-3">
                         <h5>Boy/Cub Scouts</h5>
                         <div style = "text-align: center;">
-                            <button type = "button" class = "btn btn-dark btn-sm m-1">Nocturnal Wildlife Adventure</button>
+                            <a href = "forms/nocturnalWildlifeAdventure.pdf" class = "btn btn-dark btn-sm m-1">Nocturnal Wildlife Adventure</a>
                         </div>
                     </div>
                 </div>
@@ -123,9 +129,9 @@
                 <p style = "font-weight: bold;">Click the links below for more information..</p>
 
                 <div style = "text-align: center;">
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Compass</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Wildlife Encounter</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Senior Scientist</button>
+                    <a href = "forms/compass.pdf" class = "btn btn-dark btn-sm m-1">Compass</a>
+                    <a href = "forms/wildlifeEncounters.pdf" class = "btn btn-dark btn-sm m-1">Wildlife Encounter</a>
+                    <a href = "forms/seniorScientist.pdf" class = "btn btn-dark btn-sm m-1">Senior Scientist</a>
                 </div>
 
                 <p>If you would like to schedule a program for your school, facility, library, or special event, please contact us at <a href = "info@bruknernaturecenter.com" class = "text-light">info@bruknernaturecenter.com</a> or 937-698-6493</p>
@@ -139,6 +145,7 @@
         </div>
 
 
+        <!-- Creating two more sections to hold the Homeschool Nature Club and Rivers Edge program information with links to their forms -->
         <div class = "d-flex infoStyle flex-column align-items-lg-stretch flex-lg-row">
             <section class = "m-1 infoStyle text-light bg-info">
                 <h4>Homeschool Nature Club</h4>
@@ -170,7 +177,7 @@
                 </div>
 
                 <div style = "text-align: center;">
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Homeschool Nature Club Topics</button>
+                    <a href = "forms/homeschoolNatureClub.pdf" class = "btn btn-dark btn-sm m-1">Homeschool Nature Club Topics</a>
                 </div>
 
                 <picture class = "d-flex justify-content-center pt-2" style = "display: flex;width: auto;">
@@ -206,21 +213,30 @@
                 <p>Payment due at registration</p>
 
                 <div style = "text-align: center;">
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Homeschool Nature Club Topics</button>
+                    <a href = "forms/riversEdgeExplorers.pdf" class = "btn btn-dark btn-sm m-1">Rivers Edge Flyer</a>
                 </div>
 
                 <picture class = "d-flex justify-content-center pt-2" style = "display: flex;width: auto;">
-                    <source media = "(min-width:768px)" srcset = "images/riversEdgeLarge.jpg">
-                    <source media = "(min-width:500px)" srcset = "images/riversEdgeSmall.jpg">
-                    <img src = "images/riversEdgeSmall.jpg" alt = "Homeschool Nature Club">
+                    <source media = "(min-width:768px)" srcset = "images/homeschoolLarge.jpg">
+                    <source media = "(min-width:500px)" srcset = "images/homeschoolSmall.jpg">
+                    <img src = "images/homeschoolSmall.jpg" alt = "Homeschool Nature Club">
                 </picture>
             </section>
         </div>
+
+        <!-- Creating our footer to display image links to each of Brukner's social medias, the address and a donate link -->
+        <footer class = "infoStyle d-flex justify-content-between flex-row pt-2 mt-2 mb-2 bg-info text-light">
+            <div>
+                <a href = "https://www.facebook.com/BruknerNatureCenter" title = "Facebook" class = "p-1"><img src = "images/facebookLogo.png" alt = "Facebook" /></a>
+                <a href = "https://www.instagram.com/bruknernaturecenter/" title = "Instagram" class = "p-1"><img src = "images/instagramLogo.png" alt = "Instagram" /></a> 
+                <a href = "https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=emb_logo" title = "Youtube" class = "p-1"><img src = "images/youtubeLogo.png" alt = "Youtube" /></a>
+            </div>
+
+            <p>5995 Horshoe Bend Road | Troy, OH</p>
+
+            <div style = "text-align: center;">
+                <a href = "https://www.paypal.com/donate?token=urJ9PVLNCKmuvIITiNkbnOE8NgaAoodXSoMzCTZB1ulGeAlMWwR3Sig4OP7lqbWRPhfTASxKpCf1h76P" class = "btn btn-dark btn-sm m-1">Donate!</a>
+            </div>
+        </footer>
     </body>
 </html>
-
-<!--
-Page Notes:
-
-- Connect modals and links throughout page
--->

@@ -5,12 +5,12 @@
         <!--
             File:   programs.html
             Name:   Austin Snodgrass
-            Date:   23 November 2020
-            Desc:   
+            Date:   09 December 2020
+            Desc:   File creates our Programs page that provides information about the different informational programs provided at Brukner
         -->
         <title>Programs</title>
 
-        <!-- Including our meta tags and links to our stylesheets as well as CDNs to the Bootstrap framework -->
+        <!-- Including our meta tags and links to our stylesheets and scripts -->
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <link rel = "stylesheet" href = "styles/style.css" type = "text/css" />
@@ -21,6 +21,7 @@
     </head>
 
     <body>
+        <!-- Creating our responsive navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,6 +54,7 @@
             <a class = "d-flex navbar-brand justify-content-end" href = "index.html">Brukner Nature Center</a>
         </nav>
 
+        <!-- Creating our header to display the brand and logo -->
         <div class = "jumbotron jumbotron-fluid bg-transparent">
             <div class = "container">
                 <div class = "d-flex justify-content-around flex-column flex-md-row flex-lg-row">
@@ -66,9 +68,13 @@
             </div>
         </div>
 
+        <!-- Creating our sections to hold information about the different programs provided at Brukner. Navigation is used at the top of the
+            section to allow the user to switch between each tab of information -->
         <div id = "programInfo" class = "infoStyle flex-column flex-lg-row align-items-lg-start p-3">
             <div class = "m-1 visit-item infoStyle text-light bg-info">
                 <h3>Programs</h3>
+
+                <!-- Creating the section navigation -->
                 <div class = "d-flex d-flex flex-column flex-lg-row btn-group mr-2" role = "group">
                     <button type = "button" class = "btn btn-secondary" onclick = "showPEEP()">PEEP</button>
                     <button type = "button" class = "btn btn-secondary" onclick = "showSummer()">Summer Camp for Kids</button>
@@ -76,6 +82,7 @@
                     <button type = "button" class = "btn btn-secondary" onclick = "showBirders()">Young Birders Club</button>
                 </div>
 
+                <!-- PEEP information -->
                 <div id = "peep" style = "display: block;">
                     <h6 class = "pt-2">Preschool Environmental Education Program</h6>
                     <p>Please check back with us next fall for details on the photo contest.</p>
@@ -123,6 +130,7 @@
                     </div>
                 </div>
 
+                <!-- Summer Camp information -->
                 <div id = "summerCamp" style = "display: none;">
                     <p class = "pt-2">Sign up your 'junior naturalist', who are going into grades K – 5th, for a week of outdoor adventures, wild games and wildlife encounters sure to inspire & awe!</p>
                     <p>Please check back with us next fall for details on the photo contest.</p>
@@ -152,7 +160,7 @@
                     <p>To pre-register, please call (937) 698-6493 Monday - Friday, or email <a href = "wildlife@bruknernaturecenter.com" class = "text-light">info@bruknernaturecenter.com</a></p>
                     <p>Check out our summer evening program "Where the Wild Things Are" for kids entering grades K-5th on Friday, July 24 and our "Stillwater Adventure" in July! Details are in our Summer Program Brochure!</p>
                     <div style = "text-align: center;">
-                        <button type = "button" class = "btn btn-dark btn-sm m-1">Summer Program Brochure</button>
+                        <a href = "forms/summerBrochure.pdf" class = "btn btn-dark btn-sm m-1"></a>
                     </div>
 
                     <div class = "d-flex flex-column flex-md-row flex-lg-row justify-content-center" style = "text-align: center;">
@@ -183,6 +191,7 @@
                     </div>
                 </div>
 
+                <!-- Winter Camp information -->
                 <div id = "winterCamp" style = "display: none;">
                     <p class = "pt-2">Monday, December 21 & Tuesday, December 22</p>
                     <p>When the air turns frigid and the frost settles on the windows, children fill with anticipation of winter vacation. Sign your child up for a morning of exploration and fill their new found free time with fun and learning. During 
@@ -204,7 +213,7 @@
                     <p>Cash or check only. May register for one or two days.</p>
                     <p style = "font-weight: bold;">Deadline for all camps is the Wednesday before camp</p>
                     <div style = "text-align: center;">
-                        <button type = "button" class = "btn btn-dark btn-sm m-1">Medical Consent Form</button>
+                        <a href = "forms/medicalConsentForm.pdf" class = "btn btn-dark btn-sm m-1">Medical Consent Form</a>
                     </div>
 
                     <picture class = "d-flex justify-content-center pt-3" style = "display: flex;width: auto;">
@@ -214,6 +223,7 @@
                     </picture>
                 </div>
 
+                <!-- Young Birders Club information -->
                 <div id = "birders" style = "display: none;">
                     <p class = "pt-2">Come be a part of one of the most exciting and rewarding clubs, geared specifically for young birders in grades 6 through 12!   As a member of Brukner Nature Center’s Young Birders Club you’ll enjoy the opportunity to:</p>
                     
@@ -229,7 +239,7 @@
                     <p>For more information email <a href = "brian@bruknernaturecenter.com" class = "text-light">brian@bruknernaturecenter.com</a></p>
 
                     <div style = "text-align: center;">
-                        <button type = "button" class = "btn btn-dark btn-sm m-1">YBC Member Form</button>
+                        <a href = "forms/birdersMembership.pdf" class = "btn btn-dark btn-sm m-1">YBC Member Form</a>
                     </div>
 
                     <picture class = "d-flex justify-content-center pt-3" style = "display: flex;width: auto;">
@@ -240,5 +250,20 @@
                 </div>
             </div>
         </div>
+
+        <!-- Creating our footer to display image links to each of Brukner's social medias, the address and a donate link -->
+        <footer class = "infoStyle d-flex justify-content-between flex-row pt-2 mt-2 mb-2 bg-info text-light">
+            <div>
+                <a href = "https://www.facebook.com/BruknerNatureCenter" title = "Facebook" class = "p-1"><img src = "images/facebookLogo.png" alt = "Facebook" /></a>
+                <a href = "https://www.instagram.com/bruknernaturecenter/" title = "Instagram" class = "p-1"><img src = "images/instagramLogo.png" alt = "Instagram" /></a> 
+                <a href = "https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=emb_logo" title = "Youtube" class = "p-1"><img src = "images/youtubeLogo.png" alt = "Youtube" /></a>
+            </div>
+
+            <p>5995 Horshoe Bend Road | Troy, OH</p>
+
+            <div style = "text-align: center;">
+                <a href = "https://www.paypal.com/donate?token=urJ9PVLNCKmuvIITiNkbnOE8NgaAoodXSoMzCTZB1ulGeAlMWwR3Sig4OP7lqbWRPhfTASxKpCf1h76P" class = "btn btn-dark btn-sm m-1">Donate!</a>
+            </div>
+        </footer>
     </body>
 </html>

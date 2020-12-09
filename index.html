@@ -5,12 +5,13 @@
         <!--
             File:   index.html
             Name:   Austin Snodgrass
-            Date:   25 November 2020
-            Desc:   
+            Date:   09 December 2020
+            Desc:   File creates the home page of the Brukner Redesign. Navigation and header that will be used throughout the site
+                are created here followed by the base information for Brukner
         -->
         <title>Home</title>
 
-        <!-- Including our meta tags and links to our stylesheets -->
+        <!-- Including our meta tags and links to our stylesheets and scripts -->
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <link rel = "stylesheet" href = "styles/style.css" type = "text/css" />
@@ -20,6 +21,7 @@
     </head>
 
     <body>
+        <!-- Creating our responsive navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,6 +54,7 @@
             <a class = "d-flex navbar-brand justify-content-end" href = "index.html">Brukner Nature Center</a>
         </nav>
 
+        <!-- Creating our header to display the brand and logo -->
         <div class = "jumbotron jumbotron-fluid bg-transparent">
             <div class = "container">
                 <div class = "d-flex justify-content-around flex-column flex-md-row flex-lg-row">
@@ -69,7 +72,49 @@
             </div>
         </div>
 
-        <div class = "divStyle">
+        <!-- Creating the About section with the embedded youtube video -->
+        <div id = "aboutInfo" class = "infoStyle d-flex flex-column p-3 bg-info text-light">
+            <h3>About Us</h3>
+
+            <p>Brukner Nature Center opened to the public in 1974 and is the vision of Clayton J. Brukner, local philanthropist who was born December 18, 1896 in Ravenna, Nebraska. With high school chum and business partner, E.J. "Sam" Junkin, he brought the Weaver Aircraft Company to Troy, Ohio in 1923. The company name was eventually changed to the WACO 
+                Aircraft Company, which became the most successful civil aircraft manufacturer of the pre World War II era.</p>
+            <p>Clayton Brukner was an entrepreneur, mechanical genius, and community philanthropist. He had a great love for nature and in 1933 bought 146 acres of land along the Stillwater River, not known for its productivity, but rather for its natural beauty. In 1967 he unveiled his plans to build a nature center on this site and in May of 1974, Brukner 
+                Nature Center opened to the public.  The 165 acre preserve is traversed by 6 miles of hiking trails, Interpretive Building and the 1804 Iddings Log House.</p>
+            <p>Brukner Nature Center is a privately funded, nonprofit organization promoting the appreciation and understanding of wildlife conservation through preservation, education, and rehabilitation. The 1804 Iddings log house was renovated in 1980 and again in 2006. It is on the registry of Historic Places as the oldest structure on its original site 
+                in Miami County!</p>
+            <p>Under the guidance of our first Directors, Bob & Joan Heidelberg, we grew to a 165-acre preserve with services reaching 21 counties. Today, we annually touch over 45,000 people with our innovative hands-on wildlife programming. Each year over 120,000 visitors enjoy our public events, take a stroll in the woods or visit with our wildlife ambassadors.</p>
+            <p>In 1998 an addition to Interpretive Building doubled the size and provides handicap accessibility to all three floors including our popular Tree-top Bird Vista. In May of 2011, we renovated the interpretive area in our downstairs wildlife exhibits.  Our main lobby renovation was completed in May 2016 and we just finished our wildlife rehabilitation 
+                quarantine building in 2019!  Thank you to all of our supporters who have helped us reach all of our goals!</p>
+
+
+            <iframe width = "400" height = "230" src = "https://www.youtube.com/embed/PB3kLwRZ0P8" frameborder = "0" allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br />
+
+        <!-- Creating a section about the Rivers Edge Satallite Property -->
+        <div class = "infoStyle d-flex flex-column p-3 bg-info text-light">
+            <h3>BNC’s New Satallite Property
+            <br />River's Edge Wildlife Preserve</h3>
+
+            <p>Open from sunrise to sunset and is located just a few miles southwest of us.</p>
+
+            <h5>Directions to Rivers Edge</h5>
+            <p style = "font-style: italic;">Turn left out of Brukner Nature Center then take the first right onto Greenlee Rd., which will dead end into St. Rt. 55.  Turn right and follow S.Rt. 55 over the Stillwater River.  Turn left on Calumet Rd. immediately after crossing the bridge.  The parking area will be on your left.</p>
+            <p class = "pt-2">The gravel lot provides space for 10 cars and access to a paver walkway leading to an information panel and our first and only trailhead, the Cascades Loop.  Enjoy this hike as it follows the crest of the ravine, providing excellent opportunities for birdwatching in the treetops below!  It then passes a small limestone cascade that flows only in the 
+                wetter months, but is a unique ecosystem supporting rare flora and fauna.  The trail follows an old access road down into the forested valley then back up a gently sloping rise back to the parking lot.</p>
+
+            <picture class = "d-flex justify-content-center" style = "display: flex;width: auto;">
+                <source media = "(min-width:768px)" srcset = "images/riversEdgeLarge.jpg">
+                <source media = "(min-width:500px)" srcset = "images/riversEdgeSmall.jpg">
+                <img src = "images/riversEdgeSmall.jpg" alt = "Rivers Edge">
+            </picture>
+        </div>
+
+        <br />
+        
+        <!-- Creating the contact cards with images, links and information for each contact -->
+        <div class = "infoStyle bg-info">
             <h3>Contact Us</h3>
             <div class = "mb-3 d-flex flex-column flex-md-row flex-lg-row p-3">
                 <div class = "m-1 card bg-info">
@@ -99,20 +144,19 @@
             </div>
         </div>
 
+        <!-- Creating our footer to display image links to each of Brukner's social medias, the address and a donate link -->
+        <footer class = "infoStyle d-flex justify-content-between flex-row pt-2 mt-2 mb-2 bg-info text-light">
+            <div>
+                <a href = "https://www.facebook.com/BruknerNatureCenter" title = "Facebook" class = "p-1"><img src = "images/facebookLogo.png" alt = "Facebook" /></a>
+                <a href = "https://www.instagram.com/bruknernaturecenter/" title = "Instagram" class = "p-1"><img src = "images/instagramLogo.png" alt = "Instagram" /></a> 
+                <a href = "https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=emb_logo" title = "Youtube" class = "p-1"><img src = "images/youtubeLogo.png" alt = "Youtube" /></a>
+            </div>
 
+            <p>5995 Horshoe Bend Road | Troy, OH</p>
+
+            <div style = "text-align: center;">
+                <a href = "https://www.paypal.com/donate?token=urJ9PVLNCKmuvIITiNkbnOE8NgaAoodXSoMzCTZB1ulGeAlMWwR3Sig4OP7lqbWRPhfTASxKpCf1h76P" class = "btn btn-dark btn-sm m-1">Donate!</a>
+            </div>
+        </footer>
     </body>
 </html>
-
-<!--
-- Responsive navbar at top of page similar to template
-- Footer with donate button, address, and social media links
-- Add comments to files
--->
-
-<!--
-Page Notes:
-
-- Include more information about admission
-- Include section about satellite property
-- Include page about BNC History
--->

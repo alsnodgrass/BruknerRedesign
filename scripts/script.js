@@ -1,10 +1,12 @@
 /* 
 File:   script.js
 Name:   Austin Snodgrass
-Date:   25 November 2020
-Desc:   
+Date:   09 December 2020
+Desc:   File creates out functions that will impact the the information shown in their respective pages. Functions are changing
+    the disaply value for each of the IDs provided
 */
 
+/* Functions that impact information shown in Visit page */
 function showHiking() {
     document.getElementById("hiking").style.display = "block";
     document.getElementById("birdwatching").style.display = "none";
@@ -30,26 +32,7 @@ function showIddings() {
     document.getElementById("iddings").style.display = "block";
 }
 
-
-/* Trying to add function to iterate through array of ids that match the visitInfo divs.
-    ID will be passed to this function when this button is clicked and that id will be
-    set to display and remove that ID from the array. For loop is then triggered which
-    iterates through the remaining IDs in the array and sets each one to no longer be
-    displayed. Function will hopefully assist with eliminating the large blocks of code
-    above and below that are currently doinmg this job */
-/*function showVisitInfo(id) {
-    var showID = id;
-    var idArray = ['hiking', 'birdwatching', 'interpretive', 'iddings'];
-
-    document.getElementById(showID).style.display = "block";
-    idArray.splice(showID)
-
-    for (i = 0; i < idArray.length; i++) {
-        var idChange = idArray[i];
-        document.getElementById(idChange).style.display = "none";
-    }
-}*/
-
+/* Functions that impact information shown in Wildlife Rehab page */
 function showBirdOutOfNest() {
     document.getElementById("birdOutOfNest").style.display = "block";
     document.getElementById("bunniesFound").style.display = "none";
@@ -86,8 +69,7 @@ function showRaccoonsFound() {
     document.getElementById("raccoonsFound").style.display = "block";
 }
 
-
-
+/* Functions that impact information shown in Events page */
 function showBirthday() {
     document.getElementById("birthday").style.display = "block";
     document.getElementById("wildArt").style.display = "none";
@@ -152,6 +134,7 @@ function showPhotoContest() {
     document.getElementById("photoContest").style.display = "block";
 }
 
+/* Functions that impact information shown in Programs page */
 function showPEEP() {
     document.getElementById("peep").style.display = "block";
     document.getElementById("summerCamp").style.display = "none";
@@ -177,8 +160,7 @@ function showBirders() {
     document.getElementById("birders").style.display = "block";
 }
 
-
-
+/* Functions that impact information shown in Support page */
 function showVolunteer() {
     document.getElementById("volunteer").style.display = "block";
     document.getElementById("dine").style.display = "none";

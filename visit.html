@@ -5,12 +5,12 @@
         <!--
             File:   visit.html
             Name:   Austin Snodgrass
-            Date:   25 November 2020
-            Desc:   
+            Date:   09 December 2020
+            Desc:   File creates the Visit page which provides information about some of the sights available at Brukner
         -->
         <title>Visit</title>
 
-        <!-- Including our meta tags and links to our stylesheets as well as CDNs to the Bootstrap framework -->
+        <!-- Including our meta tags and links to our stylesheets and scripts -->
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <link rel = "stylesheet" href = "styles/style.css" type = "text/css" />
@@ -21,6 +21,7 @@
     </head>
 
     <body>
+        <!-- Creating our responsive navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,6 +54,7 @@
             <a class = "d-flex navbar-brand justify-content-end" href = "index.html">Brukner Nature Center</a>
         </nav>
 
+        <!-- Creating our header to display the brand and logo -->
         <div class = "jumbotron jumbotron-fluid bg-transparent">
             <div class = "container">
                 <div class = "d-flex justify-content-around flex-column flex-md-row flex-lg-row">
@@ -73,6 +75,9 @@
             </div>
         </div>
 
+        <!-- Creating two informational sections. The first section holds admission information and the second holds information about the
+            different sights available at Brukner. Navigation is used at the top of second the section to allow the user to switch between
+            each tab of information -->
         <div id = "visitInfo" class = "infoStyle flex-column flex-lg-row align-items-lg-start p-3">
             <section class = "m-1 admission-item infoStyle text-light bg-info">
                 <h4>Admission</h4>
@@ -85,6 +90,7 @@
             </section>
 
             <div class = "m-1 visit-item infoStyle text-light bg-info">
+                <!-- Creating the section navigation -->
                 <div class = "d-flex d-flex flex-column flex-md-row flex-lg-row btn-group mr-2" role = "group">
                     <button type = "button" class = "btn btn-secondary" onclick = "showHiking()">Hike A Trail</button>
                     <button type = "button" class = "btn btn-secondary" onclick = "showBirdwatching()">Go Birdwatching</button>
@@ -92,8 +98,9 @@
                     <button type = "button" class = "btn btn-secondary" onclick = "showIddings()">Iddings Log House</button>
                 </div>
 
+                <!-- Hiking Trails information -->
                 <div id = "hiking" style = "display: block;">
-                    <p>Brukner Nature Center has 6 miles of nature trails that allow you to search for wildlife on quiet mulch trails through wooldland, wetland, and prairie.</p>
+                    <p class = "pt-2">Brukner Nature Center has 6 miles of nature trails that allow you to search for wildlife on quiet mulch trails through wooldland, wetland, and prairie.</p>
                     <ul>
                         <li>Trails are open from sunrise to sunset only!</li>
                         <li>No pets allowed - they scare our wildlife!</li>
@@ -102,6 +109,10 @@
                         <li>Please take all trash home with you!</li>
                     </ul>
 
+                    <div class = "pb-2" style = "text-align: center;">
+                        <a href = "forms/trailMap.pdf" class = "btn btn-dark btn-sm m-1">Hiking Map</a>
+                    </div>
+
                     <picture class = "d-flex justify-content-center" style = "display: flex;width: auto;">
                         <source media = "(min-width:768px)" srcset = "images/hikeLarge.jpg">
                         <source media = "(min-width:500px)" srcset = "images/hikeSmall.jpg">
@@ -109,8 +120,9 @@
                     </picture>
                 </div>
                 
+                <!-- Birdwatching information -->
                 <div id = "birdwatching" style = "display: none;">
-                    <p>Brukner Nature Center is a premier birding spot for spring migration, winter feeder watching (Project Feeder Watch) and enjoying birds at any time of the year! The Tree-Top 
+                    <p class = "pt-2">Brukner Nature Center is a premier birding spot for spring migration, winter feeder watching (Project Feeder Watch) and enjoying birds at any time of the year! The Tree-Top 
                         Bird Vista is an air-conditioned oasis during the summer months and a warm and inviting place to spend the winter hours! The pileated woodpecker visits our feeders on a 
                         regular basis year round!</p>
                     <p>Check out our calendar of events for upcoming birding programs! Meet members of the Brukner Bird club on the 3rd Sunday of every month from 2:00 - 4:00pm in our Tree-Top Bird Vista.</p>
@@ -122,8 +134,9 @@
                     </picture>
                 </div>
 
+                <!-- Interpretive Building information -->
                 <div id = "interpretive" style = "display: none;">
-                    <h6>Art Exhibits & Kid's Nature Art Exhibit</h6>
+                    <h6 class = "pt-2">Art Exhibits & Kid's Nature Art Exhibit</h6>
                     <p>Each season brings a new wildlife art exhibit to Brukner Nature Center's Heidelberg Auditorium and Meeting Room! Come enjoy our current art exhibit and mark your calendars for the 
                         opening of our new exhibit!</p>
 
@@ -142,8 +155,9 @@
                     </picture>
                 </div>
 
+                <!-- Iddings Log House information -->
                 <div id = "iddings" style = "display: none;">
-                    <p>A History of the 1804 Iddings Log House</p>
+                    <p class = "pt-2">A History of the 1804 Iddings Log House</p>
                     <h4>Iddings Log House</h4>
 
                     <p>An integral part of Brukner Nature Center’s interpretive programming, the 1804 Iddings Log House also holds an important place in the history of Miami County.  The Iddings family is 
@@ -178,12 +192,19 @@
             </div>
         </div>
 
+        <!-- Creating our footer to display image links to each of Brukner's social medias, the address and a donate link -->
+        <footer class = "infoStyle d-flex justify-content-between flex-row pt-2 mt-2 mb-2 bg-info text-light">
+            <div>
+                <a href = "https://www.facebook.com/BruknerNatureCenter" title = "Facebook" class = "p-1"><img src = "images/facebookLogo.png" alt = "Facebook" /></a>
+                <a href = "https://www.instagram.com/bruknernaturecenter/" title = "Instagram" class = "p-1"><img src = "images/instagramLogo.png" alt = "Instagram" /></a> 
+                <a href = "https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=emb_logo" title = "Youtube" class = "p-1"><img src = "images/youtubeLogo.png" alt = "Youtube" /></a>
+            </div>
 
+            <p>5995 Horshoe Bend Road | Troy, OH</p>
+
+            <div style = "text-align: center;">
+                <a href = "https://www.paypal.com/donate?token=urJ9PVLNCKmuvIITiNkbnOE8NgaAoodXSoMzCTZB1ulGeAlMWwR3Sig4OP7lqbWRPhfTASxKpCf1h76P" class = "btn btn-dark btn-sm m-1">Donate!</a>
+            </div>
+        </footer>
     </body>
 </html>
-
-<!--
-Page Notes:
-
-- Add trail map modal to hike a trail
--->

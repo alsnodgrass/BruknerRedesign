@@ -1,33 +1,27 @@
 /* 
 File:   style.css
 Name:   Austin Snodgrass
-Date:   25 November 2020
-Desc:   
+Date:   09 December 2020
+Desc:   File styles our elements, IDs, and classes throughout the site
 */
 
+/* Styling the body, h3 and ul elements to give a consistent style across the site */
 body {
     background-image: url(../images/background.jpg);
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 h3 {
     text-align: center;
     color: #FFFFFF;
     padding-top: 7px;
 }
-
 ul {
     list-style-type: square;
 }
 
-.divStyle {
-    border-radius: 10px;
-    background: #8D6F34;
-    margin: auto;
-    width: 80%;
-}
+/* Creating our infoStyle class to create a consistent style for our divs across the site */
 .infoStyle {
     border-radius: 10px;
     margin: auto;
@@ -35,22 +29,19 @@ ul {
     padding: 20px;
 }
 
+/* Styling the cards on the home page */
 .card {
     width: 100%;
     padding: 10px;
 }
 
-#visitInfo, #rehabInfo, #eventInfo, 
-#programInfo, #supportInfo, #educationInfo {
-    display: flex;
-    align-items: center;
-}
-
+/*  */
 .hours-item {
     flex: 30%;
     text-align: center;
 }
 
+/* Setting the width and styling of each of our admission and visit items used in the Visit page */
 .admission-item {
     flex: 20%;
     text-align: center;
@@ -59,6 +50,7 @@ ul {
     flex: 80%;
 }
 
+/* Setting the width of each of our woods items used in the Events page */
 .woods-item-left {
     flex: 40%;
 }
@@ -66,13 +58,17 @@ ul {
     flex: 60%;
 }
 
-#hiking, #birdwatching, #interpretive, #iddings {
-    padding: 25px 25px 25px 10px;
-    margin: auto;
+/* Setting each of our IDs used through out our pages to flex and center aligning them */
+#visitInfo, #rehabInfo, #eventInfo, 
+#programInfo, #supportInfo, #educationInfo,
+#aboutInfo {
+    display: flex;
+    align-items: center;
 }
 
+/* Setting the infoStyle class  */
 @media (max-width: 900px) {
-    .infoStyle, .divStyle {
+    .infoStyle {
         width: 90%;
     }
 }

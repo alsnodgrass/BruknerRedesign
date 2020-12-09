@@ -5,12 +5,13 @@
         <!--
             File:   wildlifeRehab.html
             Name:   Austin Snodgrass
-            Date:   23 November 2020
-            Desc:   
+            Date:   09 December 2020
+            Desc:   File creates the Wildlife Rehab page that provides information on handling wildlife situations, rescuing wildlife, living
+                with wildlife and flyers/forms for those interested in wildlife rehab
         -->
         <title>Wildlife Rehab</title>
 
-        <!-- Including our meta tags and links to our stylesheets as well as CDNs to the Bootstrap framework -->
+        <!-- Including our meta tags and links to our stylesheets and scripts -->
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <link rel = "stylesheet" href = "styles/style.css" type = "text/css" />
@@ -21,6 +22,7 @@
     </head>
 
     <body>
+        <!-- Creating our responsive navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,6 +55,7 @@
             <a class = "d-flex navbar-brand justify-content-end" href = "index.html">Brukner Nature Center</a>
         </nav>
 
+        <!-- Creating our header to display the brand and logo -->
         <div class = "jumbotron jumbotron-fluid bg-transparent">
             <div class = "container">
                 <div class = "d-flex justify-content-around flex-column flex-md-row flex-lg-row">
@@ -66,12 +69,16 @@
             </div>
         </div>
 
+        <!-- Creating two informational sections. The first section holds information about how to handle different wildlife situation and
+            the second holds information the steps to rescue wildlife. Navigation is used at the top of the first section to allow the user
+            to switch between each tab of information -->
         <div id = "rehabInfo" class = "infoStyle flex-column align-items-lg-stretch flex-lg-row">
             <div class = "m-1 infoStyle text-light bg-info">
                 <h4>What you should do if...</h4>
 
                 <br />
 
+                <!-- Creating the section navigation -->
                 <div class = "d-flex flex-column btn-group mr-1" role = "group">
                     <button type = "button" class = "btn btn-secondary" onclick = "showBirdOutOfNest()">A baby bird falls out of its nest?</button>
                     <button type = "button" class = "btn btn-secondary" onclick = "showBunniesFound()">A nest of baby bunnies is found?</button>
@@ -81,27 +88,32 @@
                 </div>
 
                 <br />
-                            
+
+                <!-- Bird Out of Nest information -->
                 <div id = "birdOutOfNest" style = "display: block;">
                     <p>Simply place the baby back in the nest.  If this is not possible, clip a berry basket lined with dry grasses to a nearby branch and place 
                         the baby inside.  Check the following day to see if the young is warm and alert.</p>
                 </div>
 
+                <!-- Bunnies Found information -->
                 <div id = "bunniesFound" style = "display: none;">
                     <p>Do not disturb them.  Mother rabbits visit their nest only in the early morning and late evening.  Simply keep your dog or cat in at night 
                         and cover the nest with an item such as a laundry basket or milk crate during the day.</p>
                 </div>
 
+                <!-- Squirrel Our of Nest information -->
                 <div id = "squirrelOutOfNest" style = "display: none;">
                     <p>Make a reunion box out of a cardboard box approximately 12 inches square.  Cut a 3” diameter hole about 3 inches from the bottom of one side.  
                         Place the youngster inside the box with a warm water bottle or handwarmer under the towel and tape it shut.  Put the box in the vicinity of 
                         the nest or where the youngster was found and give mother 5 hours free of disturbance to reclaim her young.</p>
                 </div>
 
+                <!-- Bird Cannot Fly information -->
                 <div id = "birdNoFly" style = "display: none;">
                     <p>Fledglings cannot fly, but are learning and still being fed by their parents. If necessary, simply move the youngster out of danger.</p>
                 </div>
 
+                <!-- Raccoons Found information -->
                 <div id = "raccoonsFound" style = "display: none;">
                     <p>Make a reunion box out of a cardboard box approximately 18" square. Cut a 5" diameter hole about 5" from the bottom of one side. Warm the 
                         youngsters up on a heating pad set on low then place them inside the box and tape it shut. Put the box as close as possible to where the 
@@ -134,6 +146,8 @@
             </section>
         </div>
 
+        <!-- Creating two more sections to hold information about Living With Wildlife with links to flyers for each animal and a section for
+            those interested in Wildlife Rehabilitation with forms/flyers linked -->
         <div class = "infoStyle">
             <div class = "d-flex infoStyle text-light flex-column bg-info">
                 <div>
@@ -147,20 +161,20 @@
                 </div>
 
                 <div>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Beavers</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Tree Squirrels</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Chipmunks & Squirrels</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Virginia Opossum</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Coyotes & Fox</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Waterfowl</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Eastern Cottontails</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">White-tailed Deer</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Raccoons</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Woodchucks</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Skunks</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Woodpeckers</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Songbirds</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Wild Babies</button>
+                    <a href = "forms/wildlifeBeavers.pdf" class = "btn btn-dark btn-sm m-1">Beavers</a>
+                    <a href = "forms/wildlifeTreeSquirrels.pdf" class = "btn btn-dark btn-sm m-1">Tree Squirrels</a>
+                    <a href = "forms/wildlifeChipmunks&Squirrels.pdf" class = "btn btn-dark btn-sm m-1">Chipmunks & Squirrels</a>
+                    <a href = "forms/wildlifeVirginiaOpossum.pdf" class = "btn btn-dark btn-sm m-1">Virginia Opossum</a>
+                    <a href = "forms/wildlifeCoyotes&Fox.pdf" class = "btn btn-dark btn-sm m-1">Coyotes & Fox</a>
+                    <a href = "forms/wildlifeWaterfowl.pdf" class = "btn btn-dark btn-sm m-1">Waterfowl</a>
+                    <a href = "forms/wildlifeEasternCottontails.pdf" class = "btn btn-dark btn-sm m-1">Eastern Cottontails</a>
+                    <a href = "forms/wildlifeWhiteTailedDeer.pdf" class = "btn btn-dark btn-sm m-1">White-tailed Deer</a>
+                    <a href = "forms/wildlifeRaccoons.pdf" class = "btn btn-dark btn-sm m-1">Raccoons</a>
+                    <a href = "forms/wildlifeWoodchucks.pdf" class = "btn btn-dark btn-sm m-1">Woodchucks</a>
+                    <a href = "forms/wildlifeSkunks.pdf" class = "btn btn-dark btn-sm m-1">Skunks</a>
+                    <a href = "forms/wildlifeWoodchucks.pdf" class = "btn btn-dark btn-sm m-1">Woodpeckers</a>
+                    <a href = "forms/wildlifeSongbirds.pdf" class = "btn btn-dark btn-sm m-1">Songbirds</a>
+                    <a href = "forms/wildlifeWildBabies.pdf" class = "btn btn-dark btn-sm m-1">Wild Babies</a>
                 </div>
             </div>
         </div>
@@ -173,20 +187,27 @@
                 </div>
 
                 <div>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Become an Adult Volunteer</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Become an Adult Volunteer</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Internship or Externship</button>
-                    <button type = "button" class = "btn btn-dark btn-sm m-1">Become an License Wildlife Rehabilitator</button>
+                    <a href = "forms/juniorVolunteerForm.pdf" class = "btn btn-dark btn-sm m-1">Become an Junior Volunteer</a>
+                    <a href = "forms/adultVolunteerForm.pdf" class = "btn btn-dark btn-sm m-1">Become an Adult Volunteer</a>
+                    <a href = "forms/internshipFlyer.pdf" class = "btn btn-dark btn-sm m-1">Internship or Externship</a>
+                    <a href = "http://www.owra.org" class = "btn btn-dark btn-sm m-1">Become an License Wildlife Rehabilitator</a>
                 </div>
             </div>
         </div>
 
+        <!-- Creating our footer to display image links to each of Brukner's social medias, the address and a donate link -->
+        <footer class = "infoStyle d-flex justify-content-between flex-row pt-2 mt-2 mb-2 bg-info text-light">
+            <div>
+                <a href = "https://www.facebook.com/BruknerNatureCenter" title = "Facebook" class = "p-1"><img src = "images/facebookLogo.png" alt = "Facebook" /></a>
+                <a href = "https://www.instagram.com/bruknernaturecenter/" title = "Instagram" class = "p-1"><img src = "images/instagramLogo.png" alt = "Instagram" /></a> 
+                <a href = "https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=emb_logo" title = "Youtube" class = "p-1"><img src = "images/youtubeLogo.png" alt = "Youtube" /></a>
+            </div>
 
+            <p>5995 Horshoe Bend Road | Troy, OH</p>
+
+            <div style = "text-align: center;">
+                <a href = "https://www.paypal.com/donate?token=urJ9PVLNCKmuvIITiNkbnOE8NgaAoodXSoMzCTZB1ulGeAlMWwR3Sig4OP7lqbWRPhfTASxKpCf1h76P" class = "btn btn-dark btn-sm m-1">Donate!</a>
+            </div>
+        </footer>
     </body>
 </html>
-
-<!--
-Page Notes:
-
-- Connect modals and links throughout page
--->

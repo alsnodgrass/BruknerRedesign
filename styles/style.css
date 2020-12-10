@@ -66,6 +66,10 @@ ul {
     align-items: center;
 }
 
+#logo:hover {
+    transform: scale(1.05);
+}
+
 /* Setting the infoStyle class  */
 @media (max-width: 900px) {
     .infoStyle {
